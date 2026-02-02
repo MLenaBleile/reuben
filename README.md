@@ -10,7 +10,7 @@ The agent is named **Reuben**. He has vast intelligence. He chooses to make sand
 
 ## What is a Sandwich?
 
-Not the food. A *knowledge sandwich*: a structure where something meaningful emerges between two related bounds.
+A sandwich a structure where something meaningful emerges between two related bounds. Ruebens are sandwiches. Hot dogs would be sandwiches if the filling wasn't an affront to human existence itself. Other knowledge structures can also be sandwiches.
 
 **The Squeeze Theorem** is a sandwich:
 - 🍞 Upper bound: g(x) ≥ f(x)

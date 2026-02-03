@@ -4,6 +4,24 @@ Observations, decisions, and findings during development and early runs.
 
 ---
 
+## 2026-02-02: The Independent Bread Relationship Constraint
+
+**Observation:** After adding homology constraints, Reuben produced a second batch of 3 sandwiches. #2 (The Symbiotic Illumination) was genuinely good — bacteriogenic vs. autogenic bioluminescence, with functional light output as filling. But #3 (The Cognitive Amplification Sandwich) revealed a subtler problem: the breads were "individual cognitive capacity" and "individual decision-making ability." These are the same *kind* of thing (both individual brain limits), but they're only paired *because* of the filling ("collective intelligence emergence"). Without the filling, there's no reason to pick those two specific aspects of cognition as a pair.
+
+**The refined test:** Can you explain how the two breads relate to each other WITHOUT mentioning the filling?
+
+- **Good:** "Upper bound g(x)" and "Lower bound h(x)" — these are related as upper/lower bounding functions. That relationship exists before you name f(x). The filling is *discovered* between them.
+- **Good:** "Bacteriogenic bioluminescence" and "Autogenic bioluminescence" — these are related as alternative solutions to the same biological problem. The filling (functional light output) is what they have in common.
+- **Bad:** "Individual cognitive capacity" and "Individual decision-making ability" — why are *these two* paired? Only because collective intelligence supposedly emerges between them. The filling *created* the pairing.
+
+**The principle:** In a real sandwich, the bread comes first. Two things that are naturally, independently related — and then you discover what lives between them. When the filling is what justifies the bread pairing, the sandwich is built backwards.
+
+**Why this matters:** This is the cleanest formulation of what makes the sandwich structure meaningful. It distinguishes genuine bounded structures from post-hoc rationalizations. LLMs naturally build backwards (pick a filling, find bread that fits) because that's easier. The constraint forces them to find pre-existing structural pairs first, which produces more surprising and insightful discoveries.
+
+**Fix:** Updated all three prompts (identifier, assembler, validator) to foreground the independent relationship test. The identifier now says "FIND THE BREAD FIRST" and gives explicit bad examples of filling-dependent bread pairings.
+
+---
+
 ## 2026-02-02: The Structural Homology Problem
 
 **Observation:** Even after fixing the abstraction problem (see below), Reuben's sandwiches had a deeper structural flaw: the two bread elements were not the same kind of thing.

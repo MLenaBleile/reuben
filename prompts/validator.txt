@@ -13,14 +13,15 @@ Sandwich:
 
 Evaluate on these criteria (0.0 to 1.0 each):
 
-1. BREAD COMPATIBILITY (structural homology): Are both bread elements THE SAME TYPE of thing?
-   - 1.0: Both breads are clearly the same category — two functions, two institutions, two forces, two distributions, two time periods. They form a natural pair.
-   - 0.7: Same broad category with minor asymmetry (e.g., two organizations but one is formal and one is informal)
-   - 0.5: Loosely the same category but the parallel is strained
-   - 0.3: Different categories forced into a pair (e.g., a cause paired with an effect, or a source paired with a destination)
-   - 0.0: Completely different types of thing, or effectively identical
+1. BREAD COMPATIBILITY (independent relationship): Are both breads the same type of thing AND related to each other independently of the filling?
+   The key test: Can you explain how the breads relate WITHOUT mentioning the filling?
+   - 1.0: Both breads are the same category AND have a clear relationship independent of the filling (e.g., upper/lower bounds, two competing theories, two historical analogs)
+   - 0.7: Same category, relationship mostly independent but slightly informed by the filling
+   - 0.5: Same category but the pairing feels chosen to fit the filling rather than existing independently
+   - 0.3: Different categories, or breads that only make sense as a pair because of the filling
+   - 0.0: Completely different types of thing, effectively identical, or purely filling-dependent pairing
 
-   Examples: "Upper bound g(x)" and "Lower bound h(x)" = 1.0 (both functions). "Nature" and "Human problems" = 0.2 (a source and a destination — not the same kind of thing).
+   Examples: "Upper bound g(x)" and "Lower bound h(x)" = 1.0 (both functions, related as upper/lower before you name f(x)). "Individual cognitive capacity" and "Individual decision-making ability" = 0.3 (only paired because of "collective intelligence").
 
 2. CONTAINMENT: Is the filling meaningfully bounded by the bread?
    - 1.0: Filling clearly emerges from / is constrained by / exists between the bread elements; removing either bread fundamentally changes the filling's meaning

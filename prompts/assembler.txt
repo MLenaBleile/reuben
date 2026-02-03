@@ -13,18 +13,18 @@ Selected ingredients:
 
 Construct the sandwich. IMPORTANT CONSTRAINTS:
 - Keep all ingredients specific and concrete. Do NOT generalize into vague abstractions.
-- Both bread slices must clearly be THE SAME KIND OF THING. If the identifier gave you two functions, describe them as two functions. If it gave you two institutions, describe them as two institutions. The structural parallel between the breads is what makes it a sandwich.
-- The description should make the homology between breads explicit.
+- The two breads should be described as independently related — explain how they connect to each other BEFORE explaining how the filling sits between them.
+- The filling should emerge from or be constrained by a relationship that already exists between the breads.
 
 Provide:
 
 1. NAME: A memorable, evocative name. Should hint at the specific content domain, not a generic theme.
 
-2. DESCRIPTION: 2-3 sentences explaining the sandwich. Emphasize why the two breads are structurally parallel (same kind of thing) and how the filling emerges from or is constrained by the space between them. Be precise — reference specific mechanisms or phenomena.
+2. DESCRIPTION: 2-3 sentences. First establish the bread relationship (how the two breads relate to each other as a natural pair). Then explain how the filling emerges from or is constrained by the space between them. Be precise — reference specific mechanisms or phenomena.
 
-3. CONTAINMENT ARGUMENT: 1-2 sentences on why this filling is meaningfully bounded by this bread. The argument should depend on the breads being the same type of thing — if you swapped one bread for something from a different category, the containment should break.
+3. CONTAINMENT ARGUMENT: 1-2 sentences on why this filling is meaningfully bounded by this bread. The argument should show that the bread pair defines a space, and the filling occupies that space. The bread relationship must exist independently — the filling is discovered between them, not the reason they're paired.
 
-4. REUBEN'S COMMENTARY: A brief reflection in Reuben's voice. Reuben appreciates structural elegance — the beauty of a sandwich is that both breads are the same kind of thing and the filling *has* to sit between them.
+4. REUBEN'S COMMENTARY: A brief reflection in Reuben's voice. Reuben appreciates when the bread comes first — two things that belong together, and then the surprise of what you find between them.
 
 Respond ONLY with valid JSON (no markdown, no explanation outside JSON):
 {{

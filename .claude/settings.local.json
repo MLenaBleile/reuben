@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git pull:*)",
+      "Bash(/c/Users/merli/miniconda3/envs/reuben/python -m pytest:*)",
+      "Bash(C:Usersmerliminiconda3envsreubenScriptspytest.exe tests/ -v)",
+      "Bash(cmd /c \"C:\\\\Users\\\\merli\\\\miniconda3\\\\envs\\\\reuben\\\\Scripts\\\\pytest.exe tests\\\\ -v\")",
+      "Bash(cmd /c \"cd /d C:\\\\Users\\\\merli\\\\.claude-worktrees\\\\reuben\\\\nostalgic-ride && C:\\\\Users\\\\merli\\\\miniconda3\\\\envs\\\\reuben\\\\Scripts\\\\pytest.exe tests\\\\ -v 2>&1\")",
+      "Bash(powershell.exe -Command \"Set-Location ''C:\\\\Users\\\\merli\\\\.claude-worktrees\\\\reuben\\\\nostalgic-ride''; & ''C:\\\\Users\\\\merli\\\\miniconda3\\\\envs\\\\reuben\\\\Scripts\\\\pytest.exe'' tests/ -v 2>&1\")"
+    ]
+  }
+}

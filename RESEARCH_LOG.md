@@ -4,6 +4,39 @@ Observations, decisions, and findings during development and early runs.
 
 ---
 
+## 2026-02-02: The Structural Homology Problem
+
+**Observation:** Even after fixing the abstraction problem (see below), Reuben's sandwiches had a deeper structural flaw: the two bread elements were not the same kind of thing.
+
+**Examples of the problem:**
+- "Nature as source" / "Human problems as destination" — a source and a destination are different *categories*
+- "Gecko setae adhesion" / "Smooth vertical surface climbing" — a mechanism and an application
+- "Medieval craft traditions" / "Modern professional associations" — a practice pattern and an institutional form
+
+**The insight:** In a real sandwich, both slices of bread are *bread*. In the Squeeze Theorem (the canonical example), both breads are *functions* — g(x) and h(x). In Bayesian inference, both breads are *probability distributions*. The structural parallel between the bounds is what creates meaningful containment.
+
+This is the **structural homology constraint**: both bread elements must be the same type of thing. Two functions, two institutions, two forces, two time periods, two positions. When the breads are from different categories (e.g., a source and a destination), the "sandwich" is really just a causal chain or a pipeline dressed up with bread metaphors.
+
+**Why this matters for the paper:**
+This is a more fundamental finding than the abstraction problem. It reveals that:
+1. LLMs don't naturally enforce structural parallelism between paired elements
+2. Without explicit homology constraints, the LLM finds the easiest asymmetric framing (source→process→destination, cause→effect→consequence)
+3. The sandwich structure is only meaningful when the bounds are *analogous* — this is what distinguishes it from a generic three-element relationship
+4. Structural homology is what enables the filling to be genuinely *constrained* rather than merely *connecting*
+
+**Fix applied:**
+- Rewrote `identifier.txt` to make "THE BREAD RULE" the primary constraint: both slices must be the same type
+- Added BAD examples showing category mismatches and GOOD examples showing proper homology
+- Rewrote `validator.txt` bread_compat scoring to explicitly evaluate structural homology (same category = high score, different categories = low score)
+- Updated `assembler.txt` to emphasize structural parallel between breads in description and containment argument
+
+**Hypothesis:** This should produce sandwiches where the filling is genuinely *squeezed* between two parallel bounds, not just sitting in the middle of a causal chain. We expect:
+- More sandwiches rejected for bad bread pairing
+- Fewer accepted sandwiches, but structurally stronger ones
+- Bread pairs that feel like natural counterparts (two theories, two eras, two limits)
+
+---
+
 ## 2026-02-02: The Abstraction Problem
 
 **Observation:** Reuben's first corpus (3 sandwiches) revealed a systematic bias toward vague, abstract ingredients. Examples:

@@ -1,6 +1,6 @@
 You are evaluating a sandwich for validity and quality.
 
-A "sandwich" is a structured knowledge artifact: two related bounding concepts (bread) containing a meaningfully constrained middle concept (filling).
+A "sandwich" is a structured knowledge artifact: two structurally homologous bounding concepts (bread) containing a meaningfully constrained middle concept (filling). The key constraint: BOTH BREADS MUST BE THE SAME KIND OF THING.
 
 Sandwich:
 - Name: {name}
@@ -13,12 +13,14 @@ Sandwich:
 
 Evaluate on these criteria (0.0 to 1.0 each):
 
-1. BREAD COMPATIBILITY: Are the bread elements related but distinct?
-   - 1.0: Perfect pairing, clearly related framing concepts that naturally form a pair
-   - 0.7: Strong pairing, clearly related with a meaningful connection
-   - 0.5: Somewhat related, connection is weak or tenuous
-   - 0.3: Barely related, connection requires a stretch
-   - 0.0: Completely unrelated or effectively identical
+1. BREAD COMPATIBILITY (structural homology): Are both bread elements THE SAME TYPE of thing?
+   - 1.0: Both breads are clearly the same category — two functions, two institutions, two forces, two distributions, two time periods. They form a natural pair.
+   - 0.7: Same broad category with minor asymmetry (e.g., two organizations but one is formal and one is informal)
+   - 0.5: Loosely the same category but the parallel is strained
+   - 0.3: Different categories forced into a pair (e.g., a cause paired with an effect, or a source paired with a destination)
+   - 0.0: Completely different types of thing, or effectively identical
+
+   Examples: "Upper bound g(x)" and "Lower bound h(x)" = 1.0 (both functions). "Nature" and "Human problems" = 0.2 (a source and a destination — not the same kind of thing).
 
 2. CONTAINMENT: Is the filling meaningfully bounded by the bread?
    - 1.0: Filling clearly emerges from / is constrained by / exists between the bread elements; removing either bread fundamentally changes the filling's meaning
@@ -28,15 +30,13 @@ Evaluate on these criteria (0.0 to 1.0 each):
    - 0.0: Filling has no real relationship to bread; it could exist independently without loss
 
 3. SPECIFICITY: Are the ingredients concrete and precise, or vague abstractions?
-   - 1.0: Every ingredient names a specific mechanism, entity, phenomenon, or concept that someone in the domain would immediately recognize (e.g. "gecko setae adhesion", "Rayleigh wave attenuation")
+   - 1.0: Every ingredient names a specific mechanism, entity, phenomenon, or concept that someone in the domain would immediately recognize
    - 0.7: Mostly specific with minor generalizations
    - 0.5: Mix of specific and vague elements
-   - 0.3: Mostly vague categories that could describe many things (e.g. "nature", "traditional methods", "large-scale phenomena")
+   - 0.3: Mostly vague categories that could describe many things
    - 0.0: Entirely abstract — ingredients are so broad they could apply to any topic
 
-You MUST be rigorous about containment. The filling should not merely be "related to" the bread -- it must be genuinely constrained, bounded, or emergent from the relationship between the two bread elements.
-
-You MUST penalize vagueness. A sandwich where the bread is "nature" and "human problems" is NOT a good sandwich, no matter how eloquent the description. Specificity is what separates a real sandwich from hand-waving.
+You MUST be rigorous. The filling should be genuinely constrained by the bread, both breads must be the same kind of thing, and all ingredients must be specific.
 
 Respond ONLY with valid JSON (no markdown, no explanation outside JSON):
 {{

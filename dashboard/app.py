@@ -129,9 +129,8 @@ def main():
     ### 🎯 Navigation
     **Explore Sandy's creations:**
     - 🔍 **Forage** - Is there a sandwich in it?
-    - ⭐ **Rate Sandwiches** - Browse & rate
+    - 📊 **Live Feed** - Watch sandwiches roll in
     - 🧠 **How It Works** - Architecture & tech stack
-    - 📈 **Analytics** - See the stats
     - ⚙️ **Settings** - Configure & export
     """)
 
@@ -259,18 +258,17 @@ def main():
     with col1:
         st.markdown("""
         **🔬 For Researchers:**
-        1. ⭐ Use **Rate Sandwiches** to browse & rate
-        2. 📈 Dive into **Analytics** for patterns
-        3. 💾 **Export** your findings
+        1. 🔍 Use **Forage** to test topics for sandwiches
+        2. 📊 Browse the **Live Feed** of new sandwiches
+        3. 💾 **Export** your findings in **Settings**
         """)
 
     with col2:
         st.markdown("""
         **👨‍💻 For Developers:**
         1. ✅ Monitor **System Status** in sidebar
-        2. 📊 Watch **Analytics** for quality metrics
-        3. 🗺️ Explore **Relationships** between sandwiches
-        4. ⚙️ Configure in **Settings**
+        2. 🧠 Read **How It Works** for the architecture
+        3. ⚙️ Configure in **Settings**
         """)
 
     st.markdown("---")

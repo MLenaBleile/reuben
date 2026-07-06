@@ -75,7 +75,7 @@ with col_bio:
     statistician at **Sanofi**, in the Epi/Bio department at **Memorial Sloan Kettering Cancer Center**,
     and in the AI and Automation lab at **UT Southwestern Medical Center**.
 
-    Outside of work, she trains **Brazilian Jiu-Jitsu** and **Judo** and regularly lifts weights at the gym.
+    In her spare time she enjoys sleeping, training brazilian jiu jitsu, having existential crises about the epistemology of science, and reading nonfiction.
     """)
 
 st.markdown("---")

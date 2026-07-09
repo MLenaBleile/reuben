@@ -131,7 +131,6 @@ def main():
     - 🔍 **Forage** - Is there a sandwich in it?
     - 📊 **Live Feed** - Watch sandwiches roll in
     - 🧠 **How It Works** - Architecture & tech stack
-    - ⚙️ **Settings** - Configure & export
     """)
 
     # Fun footer in sidebar
@@ -260,7 +259,6 @@ def main():
         **🔬 For Researchers:**
         1. 🔍 Use **Forage** to test topics for sandwiches
         2. 📊 Browse the **Live Feed** of new sandwiches
-        3. 💾 **Export** your findings in **Settings**
         """)
 
     with col2:
@@ -268,7 +266,6 @@ def main():
         **👨‍💻 For Developers:**
         1. ✅ Monitor **System Status** in sidebar
         2. 🧠 Read **How It Works** for the architecture
-        3. ⚙️ Configure in **Settings**
         """)
 
     st.markdown("---")

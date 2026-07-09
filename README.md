@@ -258,7 +258,6 @@ The dashboard includes:
 - 🔍 **Forage** - Is there a sandwich in it?
 - 📊 **Live Feed** - Real-time stream of new sandwiches
 - 🧠 **How It Works** - Architecture & tech stack
-- ⚙️ **Settings** - Export data and configure weights
 
 The dashboard is hosted on Streamlit Cloud and connects to a cloud PostgreSQL database (Neon). All sandwiches Sandy creates locally are synced to the cloud and appear on the public dashboard within seconds.
 
